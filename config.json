@@ -1,0 +1,10 @@
+[
+  {
+    "nickname": "shamelessbot",
+    "server": "irc.utonet.org",
+    "token": "xoxb-252659720225-ixUdUiKh54wqPlhOkTiCnTQj",
+    "channelMapping": {
+      "#shameless": "#internal"
+    }
+  }
+]
