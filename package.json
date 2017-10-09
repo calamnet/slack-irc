@@ -13,13 +13,13 @@
   "bin": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ekmartin/slack-irc.git"
+    "url": "git@github.com:calamnet/slack-irc.git"
   },
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/ekmartin/slack-irc/issues"
+    "url": "https://github.com/calamnet/slack-irc/issues"
   },
   "scripts": {
     "start": "node dist/index.js",
