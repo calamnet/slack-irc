@@ -5,7 +5,6 @@
     "token": "xoxb-252659720225-ixUdUiKh54wqPlhOkTiCnTQj",
     "channelMapping": {
       "#shameless": "#internal"
-    },
     "avatarUrl": "https://robohash.org/$username.png?size=48x48", // Set to false to disable Slack avatars
     "slackUsernameFormat": "<$username>", // defaults to "$username (IRC)"; "$username" ovverides so there's no suffix or prefix at all
     "autoSendCommands": [ // Commands that will be sent on connect
