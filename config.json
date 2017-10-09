@@ -2,32 +2,26 @@
   {
     "nickname": "shamelessbot2",
     "server": "irc.utonet.org",
-    "token": "xoxb-252659720225-ixUdUiKh54wqPlhOkTiCnTQj", // Your bot user's token
-    "slackUsernameFormat": "<$username>", // defaults to "$username (IRC)"; "$username" ovverides so there's no suffix or prefix at all
-    "autoSendCommands": [ // Commands that will be sent on connect
+    "token": "xoxb-252659720225-ixUdUiKh54wqPlhOkTiCnTQj",
+    "slackUsernameFormat": "<$username>",
+    "autoSendCommands": [
       ["PRIVMSG", "NickServ", "IDENTIFY PBJs%%"],
       ["MODE", "shamelessbot2", "+x"],
       ["AUTH", "shamelessbot2", "PBJs%%"]
     ],
-    "channelMapping": { // Maps each Slack-channel to an IRC-channel, used to direct messages to the correct place
-      "#internal": "#shameless PeanutButterJellyTime" // Add channel keys after the channel name
+    "channelMapping": { 
+      "#internal": "#shameless PeanutButterJellyTime"
     },
-    "ircOptions": { // Optional node-irc options
-      "floodProtection": false, // On by default
-      "floodProtectionDelay": 1000 // 500 by default
+    "ircOptions": { 
+      "floodProtection": false, 
+      "floodProtectionDelay": 1000
     },
-    // Makes the bot hide the username prefix for messages that start
-    // with one of these characters (commands):
     "commandCharacters": ["!", "."],
-    // Prevent messages posted by Slackbot (e.g. Slackbot responses)
-    // from being posted into the IRC channel:
-    "muteSlackbot": true, // Off by default
-    // Sends messages to Slack whenever a user joins/leaves an IRC channel:
+    "muteSlackbot": true,
     "ircStatusNotices": {
-      "join": false, // Don't send messages about joins
+      "join": false,
       "leave": true
     },
-    // Prevent messages posted by users on Slack/IRC from being forwarded:
     "muteUsers": {
       "irc": ["irc-user"],
       "slack": ["slack-user"]
